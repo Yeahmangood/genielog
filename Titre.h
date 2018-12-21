@@ -1,16 +1,12 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <fcntl.h>
-#include <unistd.h>
 #include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
 
-using namespace std; 
-
-class Document
-{
+class Titre {
 public:
+	string getTitre();
+	void getTitreViaScript(string filename);
 private:
-	String Titre;
-	String getTitre();
-	void getTitreViaScript();
+	string _titre;
 }
